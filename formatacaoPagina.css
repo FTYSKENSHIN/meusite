@@ -1,0 +1,124 @@
+/* Estilos gerais */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    background-color: #dfb43d;
+    border-top: 0; 
+  }
+  
+  header {
+    background-image: url("imagens/saudavel.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 250px; /* Altura desejada da faixa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; /* Cor do texto */
+  }
+  
+  header .header-content {
+    text-align: center;
+  }
+  
+  header .header-content h1 {
+    font-size: 42px;
+    margin: 10px 0;
+  }
+  
+  header .header-content p {
+    font-size: 32px;
+    margin: 5px 0;    
+  }
+   
+
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  nav {
+    background-color: #b4b4b4;
+    color: #fff;    
+    height: 16px;
+    padding: 8px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+   .imagem-conteudo {
+    width: 780px; /* Defina a largura desejada */
+    height: 560px; /* Defina a altura desejada */
+    object-fit: cover; /* Define como a imagem é ajustada dentro do espaço definido */
+    border: 1px solid #ffe89d; /* Define uma borda sólida de 2 pixels na cor vermelha */
+    border-radius: 70px; /* Adiciona bordas arredondadas com um raio de 10 pixels */
+  }
+
+  footer {    
+    background-color: #b4b4b4;
+    color: #fff;   
+    padding: 0.3px;
+    text-align: center;
+  }
+  
+  /* Estilos específicos */
+  
+  #formulario label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  #formulario input[type="text"],
+  #formulario input[type="number"],
+  #formulario textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  #formulario input[type="radio"],
+  #formulario input[type="checkbox"] {
+    margin: 5px;
+  }
+  
+  #formulario input[type="submit"],
+  #formulario button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;    
+  }
+  
+  #botao-exibir-formulario {
+    margin: 20px 0;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  

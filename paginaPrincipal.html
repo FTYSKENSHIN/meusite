@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treinamento e Saúde</title>
+  <link rel="stylesheet" href="formatacaoPagina.css"> 
+</head>
+
+<body>
+
+  <header>
+    <div class="header-content">
+      <h1>Comportamento e Saúde</h1>
+      <h2>O Guia Para Uma Vida Melhor</h2>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="paginaPrincipal.html">Página Principal</a></li>
+      <li><a href="calorias.html">Cálculo de Calorias</a></li>
+      <li><a href="alimentacao.html">Alimentação</a></li>
+      <li><a href="exercicios.html">Exercícios Físicos</a></li>
+      <li><a href="sono.html">Qualidade do Sono</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2 align="center">Minhas Boas Vindas Para Você!</h2>
+    <br>    
+    <center>
+    <img width="80%"  height="80%" style="border-radius:70% 3px" src="imagens/plenitude.jpg" alt="Imagem de uma pessoase sentindo plena de saúde e felicidade" />
+    <p><br>Como elevar a sua qualidade de vida?<br> Descubra agora!</p>
+    </center>
+    
+    <div id="formulario" style="display: none;">    
+      <h3>Preencha o formulário</h3>    
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required oninvalid="setCustomValidity('Por favor, preencha este campo.')">
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" required oninvalid="setCustomValidity('Por favor, preencha este campo.')">
+
+        <label for="sexo">Sexo:</label>
+        <input type="radio" id="sexo-m" name="sexo" value="Masculino" required oninvalid="setCustomValidity('Por favor, selecione uma das opções')">
+        <label for="sexo-m">Masculino</label>
+        <input type="radio" id="sexo-f" name="sexo" value="Feminino">
+        <label for="sexo-f">Feminino</label>
+
+        <label for="altura">Altura (em metros):</label>
+        <input type="number" id="altura" required Por favor, selecione uma das opções" step="0.01">
+
+        <label for="peso">Peso (em Kg):</label>
+        <input type="number" id="peso" required Por favor, selecione uma das opções" step="0.1">
+
+        <label for="perfil">Perfil:</label>
+        <input type="radio" id="perfil-constante" name="perfil" value="Faz atividade física constante" required oninvalid="setCustomValidity('Por favor, selecione uma das opções')">
+        <label for="perfil-constante">Faz atividade física constante</label>
+        <input type="radio" id="perfil-ocasional" name="perfil" value="Faz atividade física ocasional">
+        <label for="perfil-ocasional">Faz atividade física ocasional</label>
+        <input type="radio" id="perfil-sedentario" name="perfil" value="Sedentário">
+        <label for="perfil-sedentario">Sedentário</label>
+
+        <label for="fumante">Fumante:</label>
+        <input type="radio" id="fumante-s" name="fumante" value="Sim" required oninvalid="setCustomValidity('Por favor, selecione uma das opções')">
+        <label for="fumante-s">Sim</label>
+        <input type="radio" id="fumante-n" name="fumante" value="Não">
+        <label for="fumante-n">Não</label>
+
+        <label for="consumo-bebidas">Consumo de Bebidas:</label>
+        <input type="radio" id="bebidas-nunca" name="consumo-bebidas" value="Nunca" required oninvalid="setCustomValidity('Por favor, selecione uma das opções')">
+        <label for="bebidas-nunca">Nunca</label>
+        <input type="radio" id="bebidas-socialmente" name="consumo-bebidas" value="Socialmente">
+        <label for="bebidas-socialmente">Socialmente</label>
+        <input type="radio" id="bebidas-frequentemente" name="consumo-bebidas" value="Frequentemente">
+        <label for="bebidas-frequentemente">Frequentemente</label>
+
+        <label for="habitos-alimentares">Hábitos Alimentares:</label>
+        <input type="checkbox" id="verduras" name="habitos-alimentares" value="Verduras/Saladas">
+        <label for="verduras">Verduras/Saladas</label>
+        <input type="checkbox" id="carnes-vermelhas" name="habitos-alimentares" value="Carnes Vermelhas">
+        <label for="carnes-vermelhas">Carnes Vermelhas</label>
+        <input type="checkbox" id="carnes-gordas" name="habitos-alimentares" value="Carnes Gordas">
+        <label for="carnes-gordas">Carnes Gordas</label>
+        <input type="checkbox" id="peixes" name="habitos-alimentares" value="Peixes">
+        <label for="peixes">Peixes</label>
+        <input type="checkbox" id="arroz" name="habitos-alimentares" value="Arroz">
+        <label for="arroz">Arroz</label>
+        <input type="checkbox" id="agua" name="habitos-alimentares" value="Água">
+        <label for="agua">Água</label>
+        <input type="checkbox" id="sucos" name="habitos-alimentares" value="Sucos">
+        <label for="sucos">Sucos</label>
+        <input type="checkbox" id="paes" name="habitos-alimentares" value="Pães">
+        <label for="paes">Pães</label>
+        <input type="checkbox" id="embutidos" name="habitos-alimentares" value="Embutidos">
+        <label for="embutidos">Embutidos</label>
+        <input type="checkbox" id="lanches" name="habitos-alimentares" value="Lanches">
+        <label for="lanches">Lanches (Baurus, Hotdogs, etc.)</label>
+
+        <label for="observacoes">Observações:</label>
+        <textarea id="observacoes" rows="4"></textarea>                 
+
+        <input type="submit" value="Enviar" onclick="enviado()">
+        <button type="button" id="botao-cancelar-formulario">Cancelar</button>
+      </form>
+    </div>
+    <button type="button" id="botao-exibir-formulario">Preencher Formulário</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Comportamento e Saúde. Todos os direitos reservados.</p>
+  </footer>
+  <script src="comportamentoPagina.js"></script>
+  
+</body>
+
+</html>

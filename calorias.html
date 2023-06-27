@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cálculo de Calorias</title>
+  <link rel="stylesheet" href="formatacaoPagina.css">
+  <link rel="stylesheet" href="container.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Comportamento e Saúde</h1>
+      <h2>O Guia Para Uma Vida Melhor</h2>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="paginaPrincipal.html">Página Principal</a></li>
+      <li><a href="calorias.html">Cálculo de Calorias</a></li>
+      <li><a href="alimentacao.html">Alimentação</a></li>
+      <li><a href="exercicios.html">Exercícios Físicos</a></li>
+      <li><a href="sono.html">Qualidade do Sono</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Calculadora de Calorias</h2>
+    <input type="number" id="peso" placeholder="Digite o seu peso"><br>
+    <input type="number" id="velocidade" placeholder="Digite a sua velocidade"><br>
+    <input type="number" id="tempo" placeholder="Digite o seu tempo"> 
+    <br><br>
+    <button onclick="calculaCalorias()">Calcular</button>    
+    <br>
+    <p id="resultado"></p>
+  </div>  
+
+  
+
+  <footer>
+    <p>&copy; 2023 Comportamento e Saúde. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="calculo.js"></script>  
+  
+
+</body>
+
+</html>
