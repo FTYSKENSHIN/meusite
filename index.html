@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Treinamento e Saúde</title>
+  <title>Comportamento e Saúde | Início</title>
+  <link	href="favicon-16x16.png"  rel="icon">
   <link rel="stylesheet" href="formatacaoPagina.css"> 
 </head>
 
@@ -43,71 +44,89 @@
 
         <label for="idade">Idade:</label>
         <input type="number" id="idade" required oninvalid="setCustomValidity('Por favor, preencha este campo.')">
+        <br><br>
 
+        <div class="label-container">
         <label for="sexo">Sexo:</label>
-        <input type="radio" id="sexo-m" name="sexo" value="Masculino" required oninvalid="setCustomValidity('Por favor, selecione uma das opções')">
+        </div>
         <label for="sexo-m">Masculino</label>
-        <input type="radio" id="sexo-f" name="sexo" value="Feminino">
+        <input type="radio" id="sexo-m" name="sexo" value="Masculino" required oninvalid="setCustomValidity('Por favor, selecione uma das opções')">
         <label for="sexo-f">Feminino</label>
+        <input type="radio" id="sexo-f" name="sexo" value="Feminino">
+        <br><br>
 
         <label for="altura">Altura (em metros):</label>
-        <input type="number" id="altura" required Por favor, selecione uma das opções" step="0.01">
-
+        <input type="number" id="altura" required required oninvalid="setCustomValidity('Por favor, selecione uma das opções')" step="0.01">
+        
         <label for="peso">Peso (em Kg):</label>
-        <input type="number" id="peso" required Por favor, selecione uma das opções" step="0.1">
+        <input type="number" id="peso" required required oninvalid="setCustomValidity('Por favor, selecione uma das opções')" step="0.1">
+        <br><br>
 
+        <div class="label-container">
         <label for="perfil">Perfil:</label>
-        <input type="radio" id="perfil-constante" name="perfil" value="Faz atividade física constante" required oninvalid="setCustomValidity('Por favor, selecione uma das opções')">
+        </div>
         <label for="perfil-constante">Faz atividade física constante</label>
+        <input type="radio" id="perfil-constante" name="perfil" value="Faz atividade física constante" required oninvalid="setCustomValidity('Por favor, selecione uma das opções')">
+        <label for="perfil-constante">Faz atividade física ocasional</label>
         <input type="radio" id="perfil-ocasional" name="perfil" value="Faz atividade física ocasional">
-        <label for="perfil-ocasional">Faz atividade física ocasional</label>
+        <label for="perfil-ocasional">Sedentário</label>
         <input type="radio" id="perfil-sedentario" name="perfil" value="Sedentário">
-        <label for="perfil-sedentario">Sedentário</label>
+        <br><br>
 
+        <div class="label-container">
         <label for="fumante">Fumante:</label>
-        <input type="radio" id="fumante-s" name="fumante" value="Sim" required oninvalid="setCustomValidity('Por favor, selecione uma das opções')">
+        </div>
         <label for="fumante-s">Sim</label>
+        <input type="radio" id="fumante-s" name="fumante" value="Sim" required oninvalid="setCustomValidity('Por favor, selecione uma das opções')">
+        <label for="fumante-s">Não</label>
         <input type="radio" id="fumante-n" name="fumante" value="Não">
-        <label for="fumante-n">Não</label>
+        <br><br>
 
+        <div class="label-container">
         <label for="consumo-bebidas">Consumo de Bebidas:</label>
-        <input type="radio" id="bebidas-nunca" name="consumo-bebidas" value="Nunca" required oninvalid="setCustomValidity('Por favor, selecione uma das opções')">
+        </div>
         <label for="bebidas-nunca">Nunca</label>
-        <input type="radio" id="bebidas-socialmente" name="consumo-bebidas" value="Socialmente">
+        <input type="radio" id="bebidas-nunca" name="consumo-bebidas" value="Nunca" required oninvalid="setCustomValidity('Por favor, selecione uma das opções')">
         <label for="bebidas-socialmente">Socialmente</label>
-        <input type="radio" id="bebidas-frequentemente" name="consumo-bebidas" value="Frequentemente">
+        <input type="radio" id="bebidas-socialmente" name="consumo-bebidas" value="Socialmente">
         <label for="bebidas-frequentemente">Frequentemente</label>
-
+        <input type="radio" id="bebidas-frequentemente" name="consumo-bebidas" value="Frequentemente">        
+        <br><br>
+        
+        <div class="label-container">
         <label for="habitos-alimentares">Hábitos Alimentares:</label>
-        <input type="checkbox" id="verduras" name="habitos-alimentares" value="Verduras/Saladas">
+        </div>
         <label for="verduras">Verduras/Saladas</label>
+        <input type="checkbox" id="verduras" name="habitos-alimentares" value="Verduras/Saladas">
+        <label for="verduras">Carnes Vermelhas</label>
         <input type="checkbox" id="carnes-vermelhas" name="habitos-alimentares" value="Carnes Vermelhas">
-        <label for="carnes-vermelhas">Carnes Vermelhas</label>
+        <label for="carnes-vermelhas">Carnes Gordas</label>
         <input type="checkbox" id="carnes-gordas" name="habitos-alimentares" value="Carnes Gordas">
-        <label for="carnes-gordas">Carnes Gordas</label>
+        <label for="carnes-gordas">Peixes</label>
         <input type="checkbox" id="peixes" name="habitos-alimentares" value="Peixes">
-        <label for="peixes">Peixes</label>
+        <label for="peixes">Arroz</label>
         <input type="checkbox" id="arroz" name="habitos-alimentares" value="Arroz">
-        <label for="arroz">Arroz</label>
+        <label for="arroz">Água</label>
         <input type="checkbox" id="agua" name="habitos-alimentares" value="Água">
-        <label for="agua">Água</label>
+        <label for="agua">Sucos</label>
         <input type="checkbox" id="sucos" name="habitos-alimentares" value="Sucos">
-        <label for="sucos">Sucos</label>
+        <label for="sucos">Pães</label>
         <input type="checkbox" id="paes" name="habitos-alimentares" value="Pães">
-        <label for="paes">Pães</label>
+        <label for="paes">Embutidos</label>
         <input type="checkbox" id="embutidos" name="habitos-alimentares" value="Embutidos">
-        <label for="embutidos">Embutidos</label>
-        <input type="checkbox" id="lanches" name="habitos-alimentares" value="Lanches">
-        <label for="lanches">Lanches (Baurus, Hotdogs, etc.)</label>
+        <label for="embutidos">Lanches (Baurus, Hotdogs, etc.)</label>
+        <input type="checkbox" id="lanches" name="habitos-alimentares" value="Lanches">        
+        <br><br>
 
         <label for="observacoes">Observações:</label>
         <textarea id="observacoes" rows="4"></textarea>                 
 
-        <input type="submit" value="Enviar" onclick="enviado()">
+        <button id="botao-enviar">Enviar</button>
+        <p id="mensagem-erro"></p>
         <button type="button" id="botao-cancelar-formulario">Cancelar</button>
       </form>
     </div>
-    <button type="button" id="botao-exibir-formulario">Preencher Formulário</button>
+    <button type="button" id="botao-exibir-formulario">Preencher o Formulário</button>
   </section>
 
   <footer>
