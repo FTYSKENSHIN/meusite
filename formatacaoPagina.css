@@ -121,4 +121,18 @@ body {
     cursor: pointer;
   }
   
+  #video {
+    border: 2px solid #ffffff42;
+    border-radius: 20px;
+  }
+
+  .label-container {
+    font-weight: bold;
+  }
   
+  .label-container label {
+    color: rgb(255, 255, 255);
+  }
+  
+  
+   
